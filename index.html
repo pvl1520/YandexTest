@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="index.js"></script>
+		<meta charset="utf-8">
+		<title>Yandex test</title>
+	</head>
+
+	<body>
+		<div class="layout">
+			<form action="progress.json" id = "myForm" method="post" target="_blank" autocomplete="on" novalidate>
+				<div class="form-row">
+					<label for="fio">ФИО:</label>
+					<input id="fio" name="fio" type="text" placeholder="Иванов Иван Иванович">
+				</div>
+				<div class="form-row">
+					<label for="email">Email:</label>
+					<input id="email" name="email" type="email" placeholder="example@example.com">
+				</div>
+				<div class="form-row">
+					<label>Телефон:</label>
+					<input id="phone" name="phone" type="tel" placeholder="+7(999)111-22-35">
+				</div>
+				<div class="form-row">
+					<button id="submitButton" type="submit" >Отправить</button>
+				</div>
+			</form>
+			<div id="resultContainer" class="result"></div>
+		</div>
+	</body>
+</html>
